@@ -156,7 +156,7 @@ namespace UtauPlugin
         /// <summary>
         /// いずれかのパラメータを空欄にする
         /// </summary>
-        public bool DeleteParam { get; set; } = false;
+        internal bool DeleteParam { get; set; } = false;
 
         //各エントリのデフォルト値，メソッドはNoteフォルダ内の各csファイルに記述されています．
 
