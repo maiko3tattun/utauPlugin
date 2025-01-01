@@ -162,17 +162,24 @@ namespace UtauPlugin
                 v.Add(int.Parse(tmp[5]));
                 v.Add(int.Parse(tmp[6]));
 
-                if (tmp.Count > 8)
+                if (tmp.Count == 7)
                 {
-                    p.Add(float.Parse(tmp[8]));
+                    p.Add(0);
                 }
-                if (tmp.Count > 9)
+                else
                 {
-                    p.Add(float.Parse(tmp[9]));
-                }
-                if (tmp.Count > 10)
-                {
-                    v.Add(int.Parse(tmp[10]));
+                    if (tmp.Count > 8)
+                    {
+                        p.Add(float.Parse(tmp[8]));
+                    }
+                    if (tmp.Count > 9)
+                    {
+                        p.Add(float.Parse(tmp[9]));
+                    }
+                    if (tmp.Count > 10)
+                    {
+                        v.Add(int.Parse(tmp[10]));
+                    }
                 }
                 isChanged = true;
             }
