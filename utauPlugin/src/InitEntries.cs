@@ -231,7 +231,7 @@ namespace UtauPlugin
         /// <param name="key"></param>
         private void WriteTempo(Note note, string key)
         {
-            if (note.TempoIsChanged())
+            if (note.GetNum() == "INSERT" || note.TempoIsChanged())
             {
                 WriteData.Add("Tempo=" + note.GetTempo().ToString());
             }
